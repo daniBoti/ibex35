@@ -15,6 +15,9 @@
 		8812924F1C694A3A00F2A58E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8812924D1C694A3A00F2A58E /* LaunchScreen.storyboard */; };
 		8812925A1C694A3A00F2A58E /* Ibex_35Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 881292591C694A3A00F2A58E /* Ibex_35Tests.m */; };
 		881292651C694A3A00F2A58E /* Ibex_35UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 881292641C694A3A00F2A58E /* Ibex_35UITests.m */; };
+		881292741C694AA300F2A58E /* ListaValoresTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 881292731C694AA300F2A58E /* ListaValoresTableViewController.m */; };
+		8842FDB41C720B720043B028 /* Valor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8842FDB31C720B720043B028 /* Valor.m */; };
+		8842FDB71C7210AF0043B028 /* DetailValorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8842FDB61C7210AF0043B028 /* DetailValorViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		881292601C694A3A00F2A58E /* Ibex 35UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ibex 35UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		881292641C694A3A00F2A58E /* Ibex_35UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ibex_35UITests.m; sourceTree = "<group>"; };
 		881292661C694A3A00F2A58E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		881292721C694AA300F2A58E /* ListaValoresTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaValoresTableViewController.h; sourceTree = "<group>"; };
+		881292731C694AA300F2A58E /* ListaValoresTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaValoresTableViewController.m; sourceTree = "<group>"; };
+		8842FDB21C720B720043B028 /* Valor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Valor.h; sourceTree = "<group>"; };
+		8842FDB31C720B720043B028 /* Valor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Valor.m; sourceTree = "<group>"; };
+		8842FDB51C7210AF0043B028 /* DetailValorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailValorViewController.h; sourceTree = "<group>"; };
+		8842FDB61C7210AF0043B028 /* DetailValorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailValorViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,12 @@
 				881292431C694A3A00F2A58E /* AppDelegate.m */,
 				881292451C694A3A00F2A58E /* ViewController.h */,
 				881292461C694A3A00F2A58E /* ViewController.m */,
+				881292721C694AA300F2A58E /* ListaValoresTableViewController.h */,
+				881292731C694AA300F2A58E /* ListaValoresTableViewController.m */,
+				8842FDB51C7210AF0043B028 /* DetailValorViewController.h */,
+				8842FDB61C7210AF0043B028 /* DetailValorViewController.m */,
+				8842FDB21C720B720043B028 /* Valor.h */,
+				8842FDB31C720B720043B028 /* Valor.m */,
 				881292481C694A3A00F2A58E /* Main.storyboard */,
 				8812924B1C694A3A00F2A58E /* Assets.xcassets */,
 				8812924D1C694A3A00F2A58E /* LaunchScreen.storyboard */,
@@ -270,9 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8842FDB71C7210AF0043B028 /* DetailValorViewController.m in Sources */,
+				881292741C694AA300F2A58E /* ListaValoresTableViewController.m in Sources */,
 				881292471C694A3A00F2A58E /* ViewController.m in Sources */,
 				881292441C694A3A00F2A58E /* AppDelegate.m in Sources */,
 				881292411C694A3A00F2A58E /* main.m in Sources */,
+				8842FDB41C720B720043B028 /* Valor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Ibex 35/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.sennect.Ibex-35";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Ibex 35/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.sennect.Ibex-35";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +516,7 @@
 				8812926B1C694A3A00F2A58E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8812926C1C694A3A00F2A58E /* Build configuration list for PBXNativeTarget "Ibex 35Tests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +525,7 @@
 				8812926E1C694A3A00F2A58E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8812926F1C694A3A00F2A58E /* Build configuration list for PBXNativeTarget "Ibex 35UITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +534,7 @@
 				881292711C694A3A00F2A58E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
